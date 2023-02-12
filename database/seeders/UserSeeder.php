@@ -21,6 +21,7 @@ class UserSeeder extends Seeder
         'email' => 'admin@rast.com',
         'phone' => '01797325129',
         'password' => bcrypt('12345600'),
+        'status' => User::$statusArrays[1]
       ]);
       $user->assignRole('Super Admin');
       $faker = Factory::create();
